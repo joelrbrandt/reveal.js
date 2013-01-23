@@ -1,0 +1,58 @@
+/**
+ * Adobe theme for reveal.js.
+ * 
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: black;
+
+$mainFont: source-sans-pro, 'Helvetica Neue', Helvetica, sans-serif;
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: source-sans-pro, 'Helvetica Neue', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLetterSpacing: 0em;
+$selectionBackgroundColor: #e7ad52;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+div.reveal {
+    background-color: #414a4d;
+    border-radius: 30px;
+    background-image: url(adobe_logo.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
+
+.reveal {
+    code, pre {
+        font-family: source-code-pro, monospace;
+    }
+    
+    h1, h2 {
+        font-weight: bold;
+    }
+    
+    ul, ol {
+        text-align: left;
+    }
+}
